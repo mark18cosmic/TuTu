@@ -1,0 +1,239 @@
+
+body {
+    color: rgba(26, 25, 25, 0.829);
+    background-color: #B9B6E2;
+
+}
+
+nav{
+    
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li:last-child{
+    padding-right: 100%;
+    padding-left: 100%;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0px;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.main span {
+  position: absolute;
+}
+.main img {
+  width: 100%;
+  max-width: 100%;
+  height: 610px;
+}
+
+#text {
+    font-size: 60px;
+    color: white;
+}
+.line {
+    animation: anim 0.5s infinite linear;
+}
+@keyframes anim {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+.darkmode {
+    background-color: rgb(50, 50, 53);
+    color: rgb(182, 183, 189);
+}
+.switch {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #145183;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #145183;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.ann1 {
+    text-align: center;
+
+}
+
+
+  .codingwel {
+    top: 0;
+    left: 0;
+    margin: 1em 0;
+    border-radius: 3px;
+    background-color: #B9B6E2;
+  }
+
+  .codingwel a img {
+    width: 10cm;
+  }
+
+  /*/ Scrollbar \*\
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #383F51; 
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #145183; 
+}
+
+.Name {
+
+}
+
+.Name a {
+    color: white;
+   
+    text-decoration: none;
+
+
+}
+.Name a img {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+}
+.Name:visited {
+  text-decoration: none;
+
+}
+.Name h1 {
+  color: white;
+  text-decoration: none;
+}
+
+/* -------- NAV -------- */
+
+
+@media screen and (max-width: 600px) {
+  .Heading h1 {
+    font-size: 2cm;
+  }
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+
+
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 16%;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
